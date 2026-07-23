@@ -24,21 +24,21 @@
 
   
 # Cloud Service Models
-**IaaS (Infrastructure as a Service)**
+# IaaS (Infrastructure as a Service)
 Provides virtual machines, storage, networking, and other infrastructure resources.
 **Examples:**
 - Amazon EC2
 - Microsoft Azure VM
 - Google Compute 
 
- **PaaS (Platform as a Service)**
+ # PaaS (Platform as a Service)
  Provides a platform for developers to build, test, and deploy applications.
  **Examples:**
 - AWS Elastic Beanstalk
 - Google App Engine
 - Heroku
 
-**SaaS (Software as a Service)**
+# SaaS (Software as a Service)
 Provides software applications through the internet.
 Examples:
 - Spotify
@@ -51,7 +51,7 @@ Amazon Web Services (AWS) is Amazon's cloud computing platform that provides mor
 
 AWS is one of the most widely used cloud platforms because of its scalability, reliability, global reach, and pay-as-you-go pricing model.
 
-**Benefits of AWS**
+# Benefits of AWS
 - Global infrastructure
 - High availability
 - Enhanced security
@@ -59,10 +59,11 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 - Elastic scalability
 - Large service ecosystem
 
-**Popular AWS Services**
+# Popular AWS Services
+
 |Service   |     Purpose| 
 |----------|-----------------|
-|EC2	Virtual Servers|
+|EC2	|Virtual Servers|
 |S3|	Object Storage|
 |IAM|	Identity and Access Management|
 |RDS	|Managed Databases|
