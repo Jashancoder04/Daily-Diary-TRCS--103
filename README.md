@@ -1,7 +1,7 @@
-## Daily-Diary-TRCS-103
-## Day 1 – Introduction to Cloud Computing & AWS
-# Date: 22/06/2026
-## Day 1 Summary
+# Daily-Diary-TRCS-103
+# Day 1 – Introduction to Cloud Computing & AWS
+## Date: 22/06/2026
+# Day 1 Summary
 - Fundamentals of Cloud Computing
 - Service Models (IaaS, PaaS, SaaS)
 - Introduction to AWS
@@ -11,10 +11,10 @@
 - IAM User and Group Management
 - Multi-Factor Authentication (MFA)
 
- ## Introduction to Cloud Computing
+ # Introduction to Cloud Computing
  Cloud computing is the delivery of computing services, such as servers, storage, databases, networking, software, and analytics, over the internet. Instead of purchasing and maintaining physical hardware, users can access these resources on demand from cloud service providers and pay only for what they use.
 
- # Advantages of Cloud Computing
+ ## Advantages of Cloud Computing
  - Pay-as-you-go pricing
 - High scalability
 - Global accessibility
@@ -23,8 +23,8 @@
 - Reduced infrastructure costs
 
   
-## Cloud Service Models
-# IaaS (Infrastructure as a Service)
+# Cloud Service Models
+## IaaS (Infrastructure as a Service)
 Provides virtual machines, storage, networking, and other infrastructure resources.
 
 **Examples:**
@@ -32,7 +32,7 @@ Provides virtual machines, storage, networking, and other infrastructure resourc
 - Microsoft Azure VM
 - Google Compute 
 
- # PaaS (Platform as a Service)
+ ## PaaS (Platform as a Service)
  Provides a platform for developers to build, test, and deploy applications.
  
  **Examples:**
@@ -40,7 +40,7 @@ Provides virtual machines, storage, networking, and other infrastructure resourc
 - Google App Engine
 - Heroku
 
-# SaaS (Software as a Service)
+## SaaS (Software as a Service)
 Provides software applications through the internet.
 
 **Examples:**
@@ -49,12 +49,12 @@ Provides software applications through the internet.
 - Microsoft 365
 - Google Docs
 
-## Introduction to AWS
+# Introduction to AWS
 Amazon Web Services (AWS) is Amazon's cloud computing platform that provides more than 200 cloud services across computing, storage, networking, databases, analytics, machine learning, and security.
 
 AWS is one of the most widely used cloud platforms because of its scalability, reliability, global reach, and pay-as-you-go pricing model.
 
-# Benefits of AWS
+## Benefits of AWS
 - Global infrastructure
 - High availability
 - Enhanced security
@@ -62,7 +62,7 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 - Elastic scalability
 - Large service ecosystem
 
-# Popular AWS Services
+## Popular AWS Services
 
 |Service   |     Purpose| 
 |----------|-----------------|
@@ -74,7 +74,7 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 |Lambda|	Serverless Computing|
 |CloudWatch|Monitoring and Logging|
 
-# Steps to Create an AWS Account
+## Steps to Create an AWS Account
 1. Open https://aws.amazon.com
 2. Click Create an AWS Account.
 3. Enter email address, account name, and password.
@@ -86,10 +86,10 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 9. Choose the Basic Support Plan.
 10. Sign in to the AWS Management Console.
 
-## Linux Commands Learned
+# Linux Commands Learned
 Linux is a command-line based operating system widely used in cloud environments and AWS servers.
 
-# Basic Commands
+## Basic Commands
 
 | **Command**                  | **Syntax / Example**     | **Description**                                             |
 | ---------------------------- | ------------------------ | ----------------------------------------------------------- |
@@ -113,23 +113,23 @@ Linux is a command-line based operating system widely used in cloud environments
 | Clear Terminal               | `clear`                  | Clears the terminal screen.                                 |
 | Display Command Manual       | `man ls`                 | Displays the manual page for the **ls** command.            |
 
-## IAM (Identity and Access Management)
+# IAM (Identity and Access Management)
 IAM is an AWS service used to manage users, groups, roles, and permissions securely.
 
- # Features
+ ## Features
 - User Management
 - Group Management
 - Role-Based Access Control
 - Permission Policies
 - MFA Support
-## MFA (Multi-Factor Authentication)
-MFA adds an additional security layer by requiring users to verify their identity using a second authentication method such as:
 
+# MFA (Multi-Factor Authentication)
+MFA adds an additional security layer by requiring users to verify their identity using a second authentication method such as:
 - Authenticator App
 - SMS OTP
 - Hardware Security Key
  
-# Benefits of MFA
+## Benefits of MFA
 - Improved account security
 - Protection against password theft
 - Reduced unauthorized access
