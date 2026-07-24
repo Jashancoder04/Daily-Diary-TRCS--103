@@ -73,3 +73,63 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 |VPC	|Virtual Private Cloud|
 |Lambda|	Serverless Computing|
 |CloudWatch|Monitoring and Logging|
+
+# Steps to Create an AWS Account
+1. Open https://aws.amazon.com
+2. Click Create an AWS Account.
+3. Enter email address, account name, and password.
+4. Verify your email.
+5. Select Personal or Business account.
+6. Enter contact information.
+7. Add payment information.
+8. Verify phone number using OTP.
+9. Choose the Basic Support Plan.
+10. Sign in to the AWS Management Console.
+
+# Linux Commands Learned
+Linux is a command-line based operating system widely used in cloud environments and AWS servers.
+
+## Basic Commands
+
+| **Command**                  | **Syntax / Example**     | **Description**                                             |
+| ---------------------------- | ------------------------ | ----------------------------------------------------------- |
+| Current Directory            | `pwd`                    | Displays the present working directory.                     |
+| Current User                 | `whoami`                 | Displays the currently logged-in user.                      |
+| List Files                   | `ls`                     | Lists files and directories.                                |
+| Detailed File List           | `ls -l`                  | Shows file permissions, owner, size, and modification date. |
+| Sort by Latest Modified Time | `ls -lt`                 | Lists files sorted by the latest modification time.         |
+| Show Hidden Files            | `ls -a`                  | Displays hidden files and directories.                      |
+| Display Current Date         | `date`                   | Shows the current system date and time.                     |
+| Display Date Format          | `date +%D`               | Shows the date in **MM/DD/YY** format.                      |
+| Change Directory             | `cd folder_name`         | Moves into the specified directory.                         |
+| Move Back One Directory      | `cd ..`                  | Moves to the parent directory.                              |
+| Create Directory             | `mkdir myfolder`         | Creates a new directory named **myfolder**.                 |
+| Remove Empty Directory       | `rmdir myfolder`         | Deletes an empty directory.                                 |
+| Create File                  | `touch file.txt`         | Creates an empty file named **file.txt**.                   |
+| View File Content            | `cat file.txt`           | Displays the contents of a file.                            |
+| Copy File                    | `cp file1.txt file2.txt` | Copies **file1.txt** to **file2.txt**.                      |
+| Rename/Move File             | `mv old.txt new.txt`     | Renames or moves a file.                                    |
+| Delete File                  | `rm file.txt`            | Removes the specified file.                                 |
+| Clear Terminal               | `clear`                  | Clears the terminal screen.                                 |
+| Display Command Manual       | `man ls`                 | Displays the manual page for the **ls** command.            |
+
+## IAM (Identity and Access Management)
+IAM is an AWS service used to manage users, groups, roles, and permissions securely.
+
+# Features
+- User Management
+- Group Management
+- Role-Based Access Control
+- Permission Policies
+- MFA Support
+## MFA (Multi-Factor Authentication)
+MFA adds an additional security layer by requiring users to verify their identity using a second authentication method such as:
+
+- Authenticator App
+- SMS OTP
+- Hardware Security Key
+ 
+# Benefits of MFA
+- Improved account security
+- Protection against password theft
+- Reduced unauthorized access
