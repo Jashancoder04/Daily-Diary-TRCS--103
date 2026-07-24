@@ -1,7 +1,7 @@
-# Daily-Diary-TRCS-103
-# Day 1 – Introduction to Cloud Computing & AWS
-**Date: 22/06/2026**
-# Day 1 Summary
+## Daily-Diary-TRCS-103
+## Day 1 – Introduction to Cloud Computing & AWS
+# Date: 22/06/2026
+## Day 1 Summary
 - Fundamentals of Cloud Computing
 - Service Models (IaaS, PaaS, SaaS)
 - Introduction to AWS
@@ -11,7 +11,7 @@
 - IAM User and Group Management
 - Multi-Factor Authentication (MFA)
 
- # Introduction to Cloud Computing
+ ## Introduction to Cloud Computing
  Cloud computing is the delivery of computing services, such as servers, storage, databases, networking, software, and analytics, over the internet. Instead of purchasing and maintaining physical hardware, users can access these resources on demand from cloud service providers and pay only for what they use.
 
  # Advantages of Cloud Computing
@@ -23,7 +23,7 @@
 - Reduced infrastructure costs
 
   
-# Cloud Service Models
+## Cloud Service Models
 # IaaS (Infrastructure as a Service)
 Provides virtual machines, storage, networking, and other infrastructure resources.
 
@@ -49,7 +49,7 @@ Provides software applications through the internet.
 - Microsoft 365
 - Google Docs
 
-# Introduction to AWS
+## Introduction to AWS
 Amazon Web Services (AWS) is Amazon's cloud computing platform that provides more than 200 cloud services across computing, storage, networking, databases, analytics, machine learning, and security.
 
 AWS is one of the most widely used cloud platforms because of its scalability, reliability, global reach, and pay-as-you-go pricing model.
@@ -86,10 +86,10 @@ AWS is one of the most widely used cloud platforms because of its scalability, r
 9. Choose the Basic Support Plan.
 10. Sign in to the AWS Management Console.
 
-# Linux Commands Learned
+## Linux Commands Learned
 Linux is a command-line based operating system widely used in cloud environments and AWS servers.
 
-## Basic Commands
+# Basic Commands
 
 | **Command**                  | **Syntax / Example**     | **Description**                                             |
 | ---------------------------- | ------------------------ | ----------------------------------------------------------- |
@@ -116,7 +116,7 @@ Linux is a command-line based operating system widely used in cloud environments
 ## IAM (Identity and Access Management)
 IAM is an AWS service used to manage users, groups, roles, and permissions securely.
 
-# Features
+ # Features
 - User Management
 - Group Management
 - Role-Based Access Control
