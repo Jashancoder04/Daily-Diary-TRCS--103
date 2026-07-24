@@ -14,7 +14,7 @@
  # Introduction to Cloud Computing
  Cloud computing is the delivery of computing services, such as servers, storage, databases, networking, software, and analytics, over the internet. Instead of purchasing and maintaining physical hardware, users can access these resources on demand from cloud service providers and pay only for what they use.
 
- **Advantages of Cloud Computing**
+ # Advantages of Cloud Computing
  - Pay-as-you-go pricing
 - High scalability
 - Global accessibility
@@ -26,6 +26,7 @@
 # Cloud Service Models
 # IaaS (Infrastructure as a Service)
 Provides virtual machines, storage, networking, and other infrastructure resources.
+
 **Examples:**
 - Amazon EC2
 - Microsoft Azure VM
@@ -33,6 +34,7 @@ Provides virtual machines, storage, networking, and other infrastructure resourc
 
  # PaaS (Platform as a Service)
  Provides a platform for developers to build, test, and deploy applications.
+ 
  **Examples:**
 - AWS Elastic Beanstalk
 - Google App Engine
@@ -40,7 +42,8 @@ Provides virtual machines, storage, networking, and other infrastructure resourc
 
 # SaaS (Software as a Service)
 Provides software applications through the internet.
-Examples:
+
+**Examples:**
 - Spotify
 - Gmail
 - Microsoft 365
