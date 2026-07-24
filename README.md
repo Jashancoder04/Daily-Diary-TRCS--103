@@ -278,39 +278,48 @@ AWS will create and start your virtual server in a few seconds.
 
 # Connecting to the EC2 Instance
 ## Using EC2 Instance Connect (Browser)
-1.Open EC2 Dashboard.
-2.Select the running instance.
-3.Click Connect.
-4.Choose EC2 Instance Connect.
-5.Click Connect again.
+1. Open EC2 Dashboard.
+2. Select the running instance.
+3. Click Connect.
+4. Choose EC2 Instance Connect.
+5. Click Connect again.
 A browser-based terminal opens.
 
 # Hosting a Web Page on EC2
+
 After connecting to the instance:
 
 **Update Packages**
+
 sudo yum update -y
 
 **Install Apache Web Server**
+
 sudo yum install httpd -y
 
 **Start Apache**
+
 sudo systemctl start httpd
 
 **Enable Apache at Boot**
+
 sudo systemctl enable httpd
 
 **Create Sample Web Page**
+
 echo "<h1>Hello from AWS EC2</h1>" | sudo tee /var/www/html/index.html
 
 # Running the Website on Web Browser
-1.Ensure HTTP (Port 80) is allowed in Security Group.
-2.Copy the Public IPv4 Address of the instance.
-3.Open browser and enter:
+1. Ensure HTTP (Port 80) is allowed in Security Group.
+2. Copy the Public IPv4 Address of the instance.
+3. Open browser and enter:
+
 http://Public-IP
+
 Example:
 
 http://54.123.45.67
+
 The webpage should display:
 
 Hello from AWS EC2
@@ -369,9 +378,11 @@ A bucket is a container used to store objects (files) in Amazon S3.
 - Bucket names must be globally unique.
 - Must contain only lowercase letters, numbers, and hyphens.
 - Cannot contain spaces or uppercase letters.
+
 Example:
 
 my-training-bucket
+
 ## Object
 An object is a file stored inside a bucket.
 
@@ -384,48 +395,48 @@ Examples:
 - PDFs
 
 # Steps to Create an Amazon S3 Bucket
-**Step 1: Login to AWS**
+### Step 1: Login to AWS
 - Open the AWS Management Console.
 - Search for S3 and open it.
 
-**Step 2: Create Bucket**
+### Step 2: Create Bucket
 - Click Create Bucket.
 
-**Step 3: Enter Bucket Details**
+### Step 3: Enter Bucket Details
 - Bucket Name: my-first-bucket
 - Region: Select your preferred AWS Region (e.g., Mumbai).
 
-**Step 4: Configure Settings**
+### Step 4: Configure Settings
 - Keep Block Public Access enabled.
 - Leave other settings as default (or change if needed).
 
-**Step 5: Review**
+### Step 5: Review
 - Check all the bucket details.
 
- **Step 6: Create Bucket**
+ ### Step 6: Create Bucket
 - Click Create Bucket.
 
 As Your Amazon S3 bucket is now ready to store files.
 
 # Upload Files to Amazon S3 (Easy Format)
-**Step 1: Login to AWS**
+### Step 1: Login to AWS
 - Open the AWS Management Console.
 - Search for S3 and open it.
 
-**Step 2: Open Your Bucket**
+### Step 2: Open Your Bucket
 - Click on the bucket name where you want to upload files.
 
-**Step 3: Click Upload**
+### Step 3: Click Upload
 - Click the Upload button.
 
-**Step 4: Add Files**
+### Step 4: Add Files
 - Click Add Files or Add Folder.
 - Select the file(s) from your computer.
 
-**Step 5: Review**
+### Step 5: Review
 - Check the selected files and keep the default settings (or change if needed).
 
-**Step 6: Upload**
+### Step 6: Upload
 - Click Upload.
 
  Your files are now stored in the Amazon S3 bucket.
