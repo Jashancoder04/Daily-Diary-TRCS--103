@@ -554,3 +554,244 @@ A truck-sized data transfer service used for transferring exabytes of data.
 - Supports edge computing
 - Useful in remote environments
 
+
+# Training Diary – AWS VPC (Virtual Private Cloud)
+### Date: 25/06/2026
+## Today I Learned
+- Introduction to Amazon VPC
+- Components of a VPC
+- Public and Private Subnets
+- Internet Gateway
+- Route Tables
+- Network ACL (Access Control List)
+- NAT Gateway
+- Why EC2 and RDS should not be connected directly
+- Steps to create a VPC
+- Launching an EC2 instance inside a VPC
+
+# Amazon VPC (Virtual Private Cloud)
+Amazon VPC (Virtual Private Cloud) is a service that allows users to create a private and isolated virtual network within AWS. It gives complete control over networking, including IP address ranges, subnets, routing, and security.
+
+A VPC enables you to securely launch AWS resources such as EC2 instances, RDS databases, and Load Balancers in a logically isolated environment.
+
+# Why Do We Need a VPC?
+A VPC provides:
+
+- Network isolation
+- Better security
+- Controlled internet access
+- Secure communication between AWS services
+- Custom networking configuration
+- Flexible IP address management
+
+# Components of a VPC
+## 1. Subnet
+A subnet is a smaller section of a VPC.
+
+There are two main types:
+
+### Public Subnet
+- Connected to the Internet Gateway
+- Used for web servers and public applications
+- Can be accessed from the internet
+
+### Private Subnet
+- Not directly accessible from the internet
+- Used for databases and backend services
+- Provides enhanced security
+
+## 2. Internet Gateway (IGW)
+An Internet Gateway connects a VPC to the internet.
+
+Functions:
+
+- Allows inbound internet traffic
+- Allows outbound internet traffic
+- Required for resources in public subnets
+
+## 3. Route Table
+A Route Table contains rules that determine where network traffic should be directed.
+
+Example:
+| **Destination** | **Target**       |
+| --------------- | ---------------- |
+| Local VPC       | Local            |
+| 0.0.0.0/0       | Internet Gateway |
+Without a route table, network traffic cannot reach its destination correctly.
+
+## 4. Network ACL (Access Control List)
+A Network ACL is an optional firewall that controls traffic entering and leaving a subnet.
+
+Characteristics:
+
+- Works at subnet level
+- Supports Allow and Deny rules
+- Stateless (both inbound and outbound rules must be configured)
+
+Example Rules:
+
+- Allow HTTP (Port 80)
+- Allow HTTPS (Port 443)
+- Allow SSH (Port 22)
+- Deny unwanted traffic
+
+## 5. NAT Gateway
+
+A NAT (Network Address Translation) Gateway allows instances in a private subnet to access the internet without exposing them to incoming internet traffic.
+
+Uses:
+
+- Software updates
+- Downloading packages
+- Accessing AWS services securely
+
+Benefits:
+
+- Secure outbound internet access
+- Keeps private instances hidden
+- Improves network security
+
+---
+
+# Why Not Connect EC2 and RDS Directly?
+
+In a secure AWS architecture, the database should not be publicly accessible.
+
+### Recommended Architecture
+
+```text
+Internet
+     │
+Internet Gateway
+     │
+Public Subnet
+     │
+ EC2 Instance
+     │
+Private Subnet
+     │
+ RDS Database
+```
+
+### Reasons
+
+- Better security
+- Prevent unauthorized database access
+- Reduced attack surface
+- Separation of application and database layers
+- Easier compliance with security best practices
+
+In this setup:
+
+- Users access the EC2 instance.
+- The EC2 instance communicates with the RDS database privately inside the VPC.
+- The RDS database is never directly exposed to the internet.
+
+---
+
+# Steps to Create a VPC
+
+### Step 1
+
+Open the AWS Management Console.
+
+Search for:
+
+```text
+VPC
+```
+
+### Step 2
+
+Click:
+
+```text
+Create VPC
+```
+
+### Step 3
+
+Enter:
+
+- VPC Name
+- IPv4 CIDR Block
+
+Example:
+
+```text
+Name: MyVPC
+
+CIDR Block:
+10.0.0.0/16
+```
+
+### Step 4
+
+Create Subnets
+
+Example:
+
+Public Subnet
+
+```text
+10.0.1.0/24
+```
+
+Private Subnet
+
+```text
+10.0.2.0/24
+```
+
+### Step 5
+
+Attach an Internet Gateway.
+
+### Step 6
+
+Create Route Tables.
+
+Associate:
+
+- Public Route Table → Public Subnet
+- Private Route Table → Private Subnet
+
+### Step 7
+
+Configure Network ACLs and Security Groups.
+
+---
+
+# Creating an EC2 Instance in a VPC
+
+1. Open EC2 Dashboard.
+2. Click **Launch Instance**.
+3. Select the desired AMI.
+4. Choose an Instance Type.
+5. Select the VPC created earlier.
+6. Choose the Public Subnet (or Private Subnet if required).
+7. Create or select an existing Key Pair.
+8. Configure the Security Group.
+9. Review all settings.
+10. Launch the instance.
+
+The EC2 instance will now be deployed inside your custom VPC.
+
+---
+
+# Best Practices
+
+- Place web servers in Public Subnets.
+- Place databases in Private Subnets.
+- Use Security Groups for instance-level security.
+- Use Network ACLs for subnet-level security.
+- Enable NAT Gateway for private subnet internet access.
+- Follow the principle of least privilege.
+
+---
+
+
+
+# Summary
+
+Amazon VPC is the foundation of networking in AWS. It provides a secure environment where AWS resources can communicate safely while controlling internet access through components such as subnets, Internet Gateway, Route Tables, NAT Gateway, and Network ACLs. Proper VPC design improves security, scalability, and overall application architecture.
